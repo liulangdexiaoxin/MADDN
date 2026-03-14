@@ -1,0 +1,35 @@
+# 设置文本文件的换行符为自动转换
+* text=auto
+
+# 指定 Python 文件为文本文件
+*.py text
+
+# 指定 Jupyter Notebook 文件为二进制文件，避免合并冲突
+*.ipynb binary
+
+# 配置 Markdown 文件为文本文件
+*.md text
+
+# 配置图像文件为二进制文件
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+
+# 配置模型权重文件为二进制文件
+*.pth binary
+*.tar binary
+
+# 配置日志文件为二进制文件
+*.log binary
+
+# 配置 CSV 文件为文本文件
+*.csv text
+
+# 配置 JSON 文件为文本文件
+*.json text
+
+# 忽略大文件的 diff
+*.zip -diff
+*.tar.gz -diff
+*.h5 -diff
